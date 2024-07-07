@@ -6,9 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -18,13 +16,23 @@ body {
   font-style: normal;
   background-size: cover;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 auto;
+}
+@media  (max-width="1400px") {
+  
+}
+
+  
+footer{
+  align-items: center;
+  margin: 0 auto;
+ 
+
 }
 .nav-list {
   display: flex;
@@ -66,6 +74,13 @@ html {
 
   padding-bottom: -150px;
 }
+.main-container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: -170px;
+}
 .section-title2 {
   text-align: left;
   font-size: 30px;
@@ -104,7 +119,7 @@ html {
   border-bottom: 1px solid #000000;
   position: absolute;
   left: 120px;
-  margin-top: -18%;
+  margin-top: -17%;
 }
 
 .ul-skills {
@@ -119,6 +134,9 @@ html {
   position: absolute;
 
   bottom: -330px;
+}
+span {
+  display: block;
 }
 
 .about1 {
@@ -160,7 +178,7 @@ li {
 
   position: absolute;
   left: 120px;
-  margin-top: -4%;
+  margin-top: -3%;
   border-bottom: 1px solid #000;
 }
 .proj {
@@ -189,7 +207,7 @@ li {
 
   position: absolute;
 
-  margin-top: 115px;
+  margin-top: 130px;
   margin-left: -200px;
   text-decoration: none;
   list-style: none;
@@ -267,20 +285,34 @@ a {
 }
 .ff {
   font-size: 30px;
-  color: #000;
-  margin-top: 1000px;
+  color: #808080;
+ align-items: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-decoration: none;
+
+
 }
 .got {
-  margin-right: -30px;
+ 
   text-align: center;
   color: #808080;
+ 
 }
 .xx {
   color: #808080;
   text-decoration: none;
+  margin-bottom: -10%;
 }
-.foto {
+.foto  {
   width: 100px;
   height: 100px;
   align-items: center;
+  margin-top: 50px;
+  
 }
+.logo{
+  text-decoration: none;
+}
+
+
